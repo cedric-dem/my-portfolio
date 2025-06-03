@@ -1,15 +1,9 @@
 <template>
-  <div class="jobs">
-    <h1>Professional Experiences</h1>
+  <div>
     <ExperienceCard
-        v-for="(exp, index) in experiences"
-        :key="index"
-        :startDate="exp.startDate"
-        :endDate="exp.endDate"
-        :location="exp.location"
-        :company="exp.company"
-        :jobTitle="exp.jobTitle"
-        :description="exp.description"
+        v-for="(exp, i) in experiences"
+        :key="i"
+        v-bind="exp"
     />
   </div>
 </template>
@@ -19,36 +13,39 @@ import ExperienceCard from '@/components/ExperienceCard.vue'
 
 const experiences = [
   {
-    startDate: '',
-    endDate: '',
-    location: '',
-    company: 'IBA',
-    jobTitle: '',
-    description: ''
+    startDate: 'Jan 2021',
+    endDate: 'Apr 2024',
+    location: 'Paris, France',
+    company: 'Freelance / Consultant',
+    jobTitle: 'Consultant Frontend',
+    description: 'Missions réalisées pour différents clients.',
+    missions: [
+      {
+        startDate: 'Jan 2023',
+        endDate: 'Apr 2024',
+        location: 'Remote',
+        company: 'BigCorp',
+        jobTitle: 'Vue.js Expert',
+        description: 'Refonte d’un dashboard interne pour la finance.'
+      },
+      {
+        startDate: 'Jun 2021',
+        endDate: 'Dec 2022',
+        location: 'Lyon',
+        company: 'StartupX',
+        jobTitle: 'Fullstack Developer',
+        description: 'Développement d’une PWA avec Vue & Node.js.'
+      }
+    ]
   },
   {
-    startDate: '',
-    endDate: '',
-    location: '',
-    company: 'Scalian',
-    jobTitle: '',
-    description: ''
-  },
-  {
-    startDate: '',
-    endDate: '',
-    location: '',
-    company: 'B12 Consulting',
-    jobTitle: '',
-    description: ''
-  },
-  {
-    startDate: '',
-    endDate: '',
-    location: '',
-    company: 'Thales Belgium',
-    jobTitle: '',
-    description: ''
-  },
+    startDate: 'May 2020',
+    endDate: 'Dec 2020',
+    location: 'Lyon',
+    company: 'WebWorks',
+    jobTitle: 'Junior Developer',
+    description: 'Création de sites vitrines et petits outils back-office.'
+  }
 ]
 </script>
+
