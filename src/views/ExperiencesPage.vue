@@ -13,38 +13,54 @@ import ExperienceCard from '@/components/ExperienceCard.vue'
 
 const experiences = [
   {
-    startDate: 'Jan 2021',
-    endDate: 'Apr 2024',
-    location: 'Paris, France',
-    company: 'Freelance / Consultant',
-    jobTitle: 'Consultant Frontend',
-    description: 'Missions réalisées pour différents clients.',
+    startDate: '',
+    endDate: '',
+    location: '',
+    company: 'IBA',
+    jobTitle: 'Software Engineer',
+    description: ''
+  },
+  {
+    startDate: '',
+    endDate: '',
+    location: 'Bruxelles, Belgium',
+    company: 'Scalian',
+    jobTitle: 'Consulting Engineer',
+    description: '',
     missions: [
       {
-        startDate: 'Jan 2023',
-        endDate: 'Apr 2024',
-        location: 'Remote',
-        company: 'BigCorp',
-        jobTitle: 'Vue.js Expert',
-        description: 'Refonte d’un dashboard interne pour la finance.'
+        startDate: '',
+        endDate: '',
+        location: 'Charleroi, Belgium',
+        company: 'Alstom',
+        jobTitle: 'V&V Engineer',
+        description: ''
       },
       {
-        startDate: 'Jun 2021',
-        endDate: 'Dec 2022',
-        location: 'Lyon',
-        company: 'StartupX',
-        jobTitle: 'Fullstack Developer',
-        description: 'Développement d’une PWA avec Vue & Node.js.'
-      }
+        startDate: '',
+        endDate: '',
+        location: 'Charleroi, Belgium',
+        company: 'Alstom',
+        jobTitle: 'V&V Engineer',
+        description: ''
+      },
     ]
   },
   {
-    startDate: 'May 2020',
-    endDate: 'Dec 2020',
-    location: 'Lyon',
-    company: 'WebWorks',
-    jobTitle: 'Junior Developer',
-    description: 'Création de sites vitrines et petits outils back-office.'
+    startDate: '',
+    endDate: '',
+    location: 'Louvain-la-Neuve, Belgium',
+    company: 'B12 Consulting',
+    jobTitle: '',
+    description: ''
+  },
+  {
+    startDate: '',
+    endDate: '',
+    location: 'Tubize, Belgium',
+    company: 'Thales Belgium',
+    jobTitle: '',
+    description: ''
   }
 ]
 </script>

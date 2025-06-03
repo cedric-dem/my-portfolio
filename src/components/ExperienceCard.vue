@@ -38,5 +38,12 @@ export default {
 </script>
 
 <style scoped>
-/* TODO */
+.experience-card {
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
 </style>
+

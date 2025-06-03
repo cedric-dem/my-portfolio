@@ -22,5 +22,11 @@ export default {
 </script>
 
 <style scoped>
-/* TODO */
+.mission-card {
+  border: 1.5px solid #2ecc71;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #fff;
+}
 </style>
