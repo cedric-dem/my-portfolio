@@ -1,6 +1,8 @@
 <template>
   <nav class="topbar">
     <router-link to="/" class="link">Home</router-link>
+    <router-link to="/jobs" class="link">Experiences</router-link>
+    <router-link to="/education" class="link">Education</router-link>
     <router-link to="/projects" class="link">Projects</router-link>
     <router-link to="/contact" class="link">Contact</router-link>
   </nav>
@@ -22,3 +24,5 @@
   text-decoration: underline;
 }
 </style>
+<script setup lang="ts">
+</script>
