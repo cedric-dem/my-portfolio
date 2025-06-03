@@ -13,32 +13,32 @@ import ExperienceCard from '@/components/ExperienceCard.vue'
 
 const experiences = [
   {
-    startDate: '',
-    endDate: '',
-    location: '',
+    startDate: 'May 2025',
+    endDate: 'Now',
+    location: 'Louvain-la-Neuve, Belgium',
     company: 'IBA',
     jobTitle: 'Software Engineer',
     description: ''
   },
   {
-    startDate: '',
-    endDate: '',
+    startDate: 'March 2023',
+    endDate: 'March 2024',
     location: 'Bruxelles, Belgium',
     company: 'Scalian',
     jobTitle: 'Consulting Engineer',
     description: '',
     missions: [
       {
-        startDate: '',
-        endDate: '',
+        startDate: 'March 2023',
+        endDate: 'November 2023',
         location: 'Charleroi, Belgium',
         company: 'Alstom',
         jobTitle: 'V&V Engineer',
         description: ''
       },
       {
-        startDate: '',
-        endDate: '',
+        startDate: 'December 2023',
+        endDate: 'March 2024',
         location: 'Charleroi, Belgium',
         company: 'Alstom',
         jobTitle: 'V&V Engineer',
@@ -47,11 +47,11 @@ const experiences = [
     ]
   },
   {
-    startDate: '',
-    endDate: '',
+    startDate: 'July 2021',
+    endDate: 'October 2021',
     location: 'Louvain-la-Neuve, Belgium',
     company: 'B12 Consulting',
-    jobTitle: '',
+    jobTitle: 'Software developper (Intern)',
     description: ''
   },
   {
@@ -59,7 +59,7 @@ const experiences = [
     endDate: '',
     location: 'Tubize, Belgium',
     company: 'Thales Belgium',
-    jobTitle: '',
+    jobTitle: 'Student job',
     description: ''
   }
 ]

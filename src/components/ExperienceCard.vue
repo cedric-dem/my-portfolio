@@ -39,11 +39,17 @@ export default {
 
 <style scoped>
 .experience-card {
-  border: 2px solid #3498db;
-  border-radius: 8px;
-  padding: 16px;
+  border: 2px solid #333;
+  border-radius: 6px;
+  padding: 20px;
   margin-bottom: 20px;
-  background-color: #f9f9f9;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
+  color: #222;
+}
+
+.experience-card:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 </style>
-

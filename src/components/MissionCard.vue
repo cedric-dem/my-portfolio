@@ -23,10 +23,17 @@ export default {
 
 <style scoped>
 .mission-card {
-  border: 1.5px solid #2ecc71;
+  border: 1.5px solid #555;
   border-radius: 6px;
-  padding: 12px;
-  margin-top: 10px;
-  background-color: #fff;
+  padding: 16px;
+  margin-top: 12px;
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+  color: #333;
+}
+
+.mission-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 </style>
