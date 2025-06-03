@@ -13,7 +13,7 @@ import ExperienceCard from '@/components/ExperienceCard.vue'
 
 const experiences = [
   {
-    startDate: 'May 2025',
+    startDate: 'May 2024',
     endDate: 'Now',
     location: 'Louvain-la-Neuve, Belgium',
     company: 'IBA',
