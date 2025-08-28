@@ -2,7 +2,13 @@
 <template>
   <div class="experience-card">
     <h2>{{ jobTitle }} — <span class="company">{{ company }}</span></h2>
-    <p class="date">{{ dateRanges.start }} → {{ dateRanges.end }}</p>
+    <p
+        v-for="(range, index) in dateRanges"
+        :key="index"
+        class="date"
+    >
+      {{ range.start }} → {{ range.end }}
+    </p>
     <p class="location">{{ location }}</p>
     <p class="description">{{ description }}</p>
 
@@ -39,12 +45,12 @@ const props = defineProps({
   }
 })
 
-const formatDate = (dateArray) => dateArray.join(' ')
-
-const dateRanges = computed(() => ({
-  start: formatDate(props.startDate),
-  end: formatDate(props.endDate)
-}))
+const dateRanges = computed(() =>
+    props.startDate.map((start, index) => ({
+      start,
+      end: props.endDate[index] || ''
+    }))
+)
 </script>
 
 <style scoped>
