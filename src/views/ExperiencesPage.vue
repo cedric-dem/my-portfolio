@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <ParallaxBackground image="experiences_bg.jpeg" />
+  <div class="experiences">
     <ExperienceCard
         v-for="(exp, i) in experiences"
         :key="i"
@@ -10,6 +11,7 @@
 
 <script setup>
 import ExperienceCard from '@/components/ExperienceCard.vue'
+import ParallaxBackground from '@/components/ParallaxBackground.vue'
 
 const experiences = [
   {
@@ -64,4 +66,9 @@ const experiences = [
   }
 ]
 </script>
-
+<style scoped>
+.experiences {
+  width: 90%;
+  margin: 40px auto;
+}
+</style>
