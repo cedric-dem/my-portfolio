@@ -1,8 +1,9 @@
 <script setup>
-
+import ParallaxBackground from '@/components/ParallaxBackground.vue'
 </script>
 
 <template>
+  <ParallaxBackground image="home_bg.jpg" />
   <div class="home">
     <h1>Who Am I ?</h1>
     <p>My name is Cédric, I was born on the 20th of August 1999. I live in Belgium</p>
@@ -18,5 +19,6 @@
   margin: 0 auto;
   padding: 40px 20px;
   line-height: 1.6;
+  color: #fff;
 }
 </style>
