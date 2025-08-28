@@ -69,6 +69,6 @@ const experiences = [
 <style scoped>
 .experiences {
   width: 90%;
-  margin: 40px auto;
+  margin: 80px auto 40px
 }
 </style>
