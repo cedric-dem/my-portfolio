@@ -15,16 +15,16 @@ import ParallaxBackground from '@/components/ParallaxBackground.vue'
 
 const experiences = [
   {
-    startDate: 'May 2024',
-    endDate: 'Now',
+    startDate: ['May 2024'],
+    endDate: ['Now'],
     location: 'Louvain-la-Neuve, Belgium',
     company: 'IBA',
     jobTitle: 'Software Engineer',
     description: ''
   },
   {
-    startDate: 'March 2023',
-    endDate: 'March 2024',
+    startDate: ['March 2023'],
+    endDate: ['March 2024'],
     location: 'Bruxelles, Belgium',
     company: 'Scalian',
     jobTitle: 'Consulting Engineer',
@@ -49,16 +49,16 @@ const experiences = [
     ]
   },
   {
-    startDate: 'July 2021',
-    endDate: 'October 2021',
+    startDate: ['July 2021'],
+    endDate: ['October 2021'],
     location: 'Louvain-la-Neuve, Belgium',
     company: 'B12 Consulting',
     jobTitle: 'Software developper (Intern)',
     description: ''
   },
   {
-    startDate: '',
-    endDate: '',
+    startDate: ['July 2016','July 2017'],
+    endDate: ['August 2016','August 2017'],
     location: 'Tubize, Belgium',
     company: 'Thales Belgium',
     jobTitle: 'Student job',

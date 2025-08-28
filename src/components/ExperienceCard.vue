@@ -1,7 +1,8 @@
++27-18
 <template>
   <div class="experience-card">
     <h2>{{ jobTitle }} — <span class="company">{{ company }}</span></h2>
-    <p class="date">{{ startDate }} → {{ endDate }}</p>
+    <p class="date">{{ dateRanges.start }} → {{ dateRanges.end }}</p>
     <p class="location">{{ location }}</p>
     <p class="description">{{ description }}</p>
 
@@ -15,26 +16,35 @@
     </div>
   </div>
 </template>
-
-<script>
+<script setup>
+import { computed, defineProps } from 'vue'
 import MissionCard from './MissionCard.vue'
 
-export default {
-  name: 'ExperienceCard',
-  components: { MissionCard },
-  props: {
-    startDate: String,
-    endDate: String,
-    location: String,
-    company: String,
-    jobTitle: String,
-    description: String,
-    missions: {
-      type: Array,
-      default: () => []
-    }
+const props = defineProps({
+  startDate: {
+    type: Array,
+    default: () => []
+  },
+  endDate: {
+    type: Array,
+    default: () => []
+  },
+  location: String,
+  company: String,
+  jobTitle: String,
+  description: String,
+  missions: {
+    type: Array,
+    default: () => []
   }
-}
+})
+
+const formatDate = (dateArray) => dateArray.join(' ')
+
+const dateRanges = computed(() => ({
+  start: formatDate(props.startDate),
+  end: formatDate(props.endDate)
+}))
 </script>
 
 <style scoped>
