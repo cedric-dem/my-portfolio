@@ -1,6 +1,7 @@
 <template>
   <div class="mission-card">
-    <h3>{{ jobTitle }} — <span class="company">{{ company }}</span></h3>
+    <h3>{{ jobTitle }}</h3>
+    <p class="company">{{ company }}</p>
     <p class="date">{{ startDate }} → {{ endDate }}</p>
     <p class="location">{{ location }}</p>
     <p class="description">{{ description }}</p>

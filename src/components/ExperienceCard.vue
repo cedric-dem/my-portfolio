@@ -1,7 +1,7 @@
-+27-18
 <template>
   <div class="experience-card">
-    <h2>{{ jobTitle }} — <span class="company">{{ company }}</span></h2>
+    <h2>{{ jobTitle }}</h2>
+    <p class="company">{{ company }}</p>
     <p
         v-for="(range, index) in dateRanges"
         :key="index"
