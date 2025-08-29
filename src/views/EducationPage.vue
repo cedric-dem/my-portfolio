@@ -25,7 +25,10 @@ const universities = [
         startDate: '2021',
         endDate: '2022',
         name: 'Master Program',
-        courses: ['Master Thesis', 'Internship']
+        courses: [
+          { name: 'Master Thesis ', link: '/Memoire.pdf' },
+          { name: 'Internship '}
+        ]
       },
       {
         startDate: '2020',
