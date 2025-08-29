@@ -8,6 +8,7 @@
   </nav>
 </template>
 
+
 <style scoped>
 .topbar {
   position: fixed;
@@ -15,9 +16,11 @@
   left: 0;
   width: 100%;
   display: flex;
-  gap: 20px;
-  background: linear-gradient(90deg, #4b6cb7, #182848);
+  justify-content: center;
+  gap: 30px;
   padding: 15px 30px;
+  background: rgba(27, 38, 79, 0.75);
+  backdrop-filter: blur(8px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10;
 }
@@ -25,14 +28,17 @@
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
 }
 .link:hover {
   color: #ffd700;
+  border-bottom-color: #ffd700;
 }
 .router-link-active {
   font-weight: 700;
-  text-decoration: underline;
+  border-bottom-color: #ffd700;
 }
 </style>
 <script setup lang="ts">

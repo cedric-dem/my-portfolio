@@ -1,5 +1,5 @@
 <template>
-  <ParallaxBackground image="experiences_bg.jpeg" />
+  <ParallaxBackground image="bg_education.jpg" />
   <div class="education">
     <UniversityCard
         v-for="(uni, i) in universities"
@@ -25,15 +25,13 @@ const universities = [
         startDate: '2021',
         endDate: '2022',
         name: 'Master Program',
-        description: '',
-        details: ['Master Thesis', 'Internship']
+        courses: ['Master Thesis', 'Internship']
       },
       {
         startDate: '2020',
         endDate: '2017',
         name: 'Bachelor',
-        description: '',
-        details: ['Introduction to programming concepts of software development: algorithms, programming, machine learning etc..']
+        courses: ['Introduction to programming concepts of software development: algorithms, programming, machine learning etc..']
       }
     ]
   }

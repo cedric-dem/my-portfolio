@@ -68,4 +68,7 @@ const dateRanges = computed(() =>
 .experience-card:hover {
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
+.description {
+  text-align: left;
+}
 </style>
