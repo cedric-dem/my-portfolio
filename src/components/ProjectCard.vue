@@ -3,12 +3,11 @@
     <h3>{{ name }}</h3>
     <p class="description">{{ description }}</p>
     <p class="links">
-      <a :href="github" target="_blank" rel="noopener">GitHub</a>
-      <span v-if="app"> | <a :href="app" target="_blank" rel="noopener">Live App</a></span>
+      <a :href="github" target="_blank" rel="noopener">GitHub Page</a>
+      <span v-if="app"> | <a :href="app" target="_blank" rel="noopener">Play Store Page</a></span>
     </p>
-    <ul v-if="tech && tech.length" class="tech">
-      <li v-for="(item, index) in tech" :key="index">{{ item }}</li>
-    </ul>
+    <p> Technical Details :</p>
+    <p class="technical">{{ technical }}</p>
   </div>
 </template>
 
@@ -19,10 +18,7 @@ defineProps({
   description: String,
   github: String,
   app: String,
-  tech: {
-    type: Array,
-    default: () => []
-  }
+  technical: String
 })
 </script>
 
@@ -50,4 +46,10 @@ defineProps({
 .links a:hover {
   text-decoration: underline;
 }
+
+.technical{
+  text-align: left;
+}
+
+
 </style>
