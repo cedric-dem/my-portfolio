@@ -1,12 +1,13 @@
-+43-0
 <template>
   <div class="program-card">
     <h3>{{ name }}</h3>
     <p class="date">{{ startDate }} → {{ endDate }}</p>
-    <p class="description">{{ description }}</p>
-    <ul v-if="details && details.length" class="details">
-      <li v-for="(detail, index) in details" :key="index">{{ detail }}</li>
-    </ul>
+    <div v-if="courses && courses.length">
+      <p>Courses :</p>
+      <ul class="courses">
+        <li v-for="(course, index) in courses" :key="index">{{ course }}</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -17,8 +18,7 @@ export default {
     startDate: String,
     endDate: String,
     name: String,
-    description: String,
-    details: {
+    courses: {
       type: Array,
       default: () => []
     }
@@ -36,6 +36,12 @@ export default {
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   transition: box-shadow 0.3s ease;
   color: #333;
+}
+
+.courses {
+  padding-left: 0;
+  list-style-position: inside;
+  text-align: left;
 }
 
 .program-card:hover {

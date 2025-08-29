@@ -1,5 +1,5 @@
 <template>
-  <ParallaxBackground image="experiences_bg.jpeg" />
+  <ParallaxBackground image="bg_experiences.jpg" />
   <div class="experiences">
     <ExperienceCard
         v-for="(exp, i) in experiences"

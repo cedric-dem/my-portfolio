@@ -1,5 +1,6 @@
 <script setup>
 import ProjectCard from '../components/ProjectCard.vue'
+import ParallaxBackground from "@/components/ParallaxBackground.vue";
 
 const projects = [
   {
@@ -13,6 +14,7 @@ const projects = [
 </script>
 
 <template>
+  <ParallaxBackground image="bg_projects.jpg" />
   <div class="projects">
     <h1>Personal Projects </h1>
     <ProjectCard

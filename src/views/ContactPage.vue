@@ -1,8 +1,10 @@
 <script setup>
 
+import ParallaxBackground from "@/components/ParallaxBackground.vue";
 </script>
 
 <template>
+  <ParallaxBackground image="bg_contact.jpg" />
   <div class="contact">
     <h1>Contact</h1>
     <p>If you would like to discuss with me, feel free to join me via  </p>
