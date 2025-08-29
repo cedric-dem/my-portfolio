@@ -1,7 +1,6 @@
-+61-0
 <template>
   <div class="university-card">
-    <h2>{{ university }}</h2>
+    <h2>{{ name }}</h2>
     <p class="location">{{ location }}</p>
     <p v-for="(range, index) in dateRanges" :key="index" class="date">
       {{ range.start }} → {{ range.end }}
@@ -28,7 +27,7 @@ const props = defineProps({
     default: () => []
   },
   location: String,
-  university: String,
+  name: String,
   description: String,
   programs: {
     type: Array,

@@ -1,6 +1,6 @@
 <template>
   <div class="mission-card">
-    <h3>{{ jobTitle }}</h3>
+    <h3>{{ name }}</h3>
     <p class="company">{{ company }}</p>
     <p class="date">{{ startDate }} → {{ endDate }}</p>
     <p class="location">{{ location }}</p>
@@ -16,7 +16,7 @@ export default {
     endDate: String,
     location: String,
     company: String,
-    jobTitle: String,
+    name: String,
     description: String
   }
 }

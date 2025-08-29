@@ -1,6 +1,6 @@
 <template>
   <div class="experience-card">
-    <h2>{{ jobTitle }}</h2>
+    <h2>{{ name }}</h2>
     <p class="company">{{ company }}</p>
     <p
         v-for="(range, index) in dateRanges"
@@ -37,7 +37,7 @@ const props = defineProps({
   },
   location: String,
   company: String,
-  jobTitle: String,
+  name: String,
   description: String,
   missions: {
     type: Array,
