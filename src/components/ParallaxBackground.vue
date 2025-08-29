@@ -1,5 +1,8 @@
++25-4
 <template>
-  <div class="parallax-bg" :style="bgStyle"></div>
+  <div class="parallax-bg">
+    <div class="bg-image" :style="bgStyle"></div>
+  </div>
 </template>
 
 <script>
@@ -50,11 +53,30 @@ export default {
   left: -10%;
   width: 120%;
   height: 120%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   filter: blur(8px);
-  z-index: -1;
-  pointer-events: none;
+}
+
+.parallax-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 </style>
