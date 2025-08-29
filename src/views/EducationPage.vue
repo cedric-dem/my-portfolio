@@ -31,8 +31,8 @@ const universities = [
         ]
       },
       {
-        startDate: '2020',
-        endDate: '2017',
+        startDate: '2017',
+        endDate: '2020',
         name: 'Bachelor',
         courses: ['Introduction to programming concepts of software development: algorithms, programming, machine learning etc..']
       }
