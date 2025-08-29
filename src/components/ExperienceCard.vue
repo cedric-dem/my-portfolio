@@ -1,5 +1,5 @@
 <template>
-  <div class="experience-card">
+  <BaseCard>
     <h2>{{ jobTitle }}</h2>
     <p class="company">{{ company }}</p>
     <p
@@ -20,11 +20,12 @@
           v-bind="mission"
       />
     </div>
-  </div>
+  </BaseCard>
 </template>
 <script setup>
 import { computed, defineProps } from 'vue'
 import MissionCard from './MissionCard.vue'
+import BaseCard from './BaseCard.vue'
 
 const props = defineProps({
   startDate: {
@@ -54,20 +55,6 @@ const dateRanges = computed(() =>
 </script>
 
 <style scoped>
-.experience-card {
-  border: 2px solid #333;
-  border-radius: 6px;
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: box-shadow 0.3s ease;
-  color: #222;
-}
-
-.experience-card:hover {
-  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-}
 .description {
   text-align: left;
 }

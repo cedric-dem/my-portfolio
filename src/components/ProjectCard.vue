@@ -1,5 +1,5 @@
 <template>
-  <div class="project-card">
+  <BaseCard>
     <h3>{{ name }}</h3>
     <p class="description">{{ description }}</p>
     <p class="links">
@@ -8,11 +8,13 @@
     </p>
     <p> Technical Details :</p>
     <p class="technical">{{ technical }}</p>
-  </div>
+  </BaseCard>
 </template>
 
 <script setup>
 import { defineProps } from "vue"
+import BaseCard from './BaseCard.vue'
+
 defineProps({
   name: String,
   description: String,
@@ -23,21 +25,6 @@ defineProps({
 </script>
 
 <style scoped>
-.project-card {
-  border: 1.5px solid #555;
-  border-radius: 6px;
-  padding: 16px;
-  margin-top: 12px;
-  background-color: #f5f5f5;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  transition: box-shadow 0.3s ease;
-  color: #333;
-}
-
-.project-card:hover {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
 .links a {
   color: #1a0dab;
   text-decoration: none;
@@ -50,6 +37,5 @@ defineProps({
 .technical{
   text-align: left;
 }
-
 
 </style>
