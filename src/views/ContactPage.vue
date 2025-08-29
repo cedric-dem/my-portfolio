@@ -24,5 +24,19 @@ import ParallaxBackground from "@/components/ParallaxBackground.vue";
 </template>
 
 <style scoped>
-
+.contact h1{
+  color: #fff;
+}
+.contact h2{
+  color: #fff;
+}
+.contact p{
+  color: #fff;
+}
+.email-link {
+  color: #8888ff;
+}
+.linkedin-link {
+  color: #8888ff;
+}
 </style>
