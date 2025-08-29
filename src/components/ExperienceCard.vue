@@ -2,6 +2,7 @@
   <BaseCard>
     <h2>{{ jobTitle }}</h2>
     <p class="company">{{ company }}</p>
+    <p class="location">{{ location }}</p>
     <p
         v-for="(range, index) in dateRanges"
         :key="index"
@@ -9,7 +10,6 @@
     >
       {{ range.start }} → {{ range.end }}
     </p>
-    <p class="location">{{ location }}</p>
     <p class="description">{{ description }}</p>
 
     <div v-if="missions && missions.length" class="missions">
